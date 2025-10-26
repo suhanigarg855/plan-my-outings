@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual envs
+venv/
+.venv/
+env/
+ENV/
+
+# SQLite DBs and local data
+*.db
+backend.db
+users_data.json
+
+# Archives & build outputs
+*.zip
+*.tar.gz
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Streamlit caches/logs
+.streamlit/
+logs/
+.cache/
