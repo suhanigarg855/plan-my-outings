@@ -126,14 +126,24 @@ Streamlit will show a local URL — open it (usually http://localhost:8501)
 5. PlanPal AI Assistant: Chat or ask for outing ideas, restaurants, itineraries.
 6. Dashboard: View all created or joined events with status.
 
-## 🧠 AI Integration – PlanPal
+## 🤖 PlanPal Assistant (AI Feature)
 
-PlanPal uses Google Gemini API to:
-- Generate activity ideas & itineraries.
-- Suggest venues and timings.
-- Answer planning-related queries conversationally.
+PlanPal is an AI-based event planning assistant integrated into the app using the **Google Gemini API**.  
+It is designed to generate smart event suggestions, venue recommendations, and itineraries based on user preferences such as mood, group size, and location.
 
->The AI Assistant is designed to make trip planning collaborative and fun!
+### 🔍 Current Status
+Due to limited API access and time constraints, the live AI responses are currently **disabled** in this demo version.  
+However, the backend integration with the Gemini API is already implemented in the `planpal_bot.py` file and can be activated once a valid API key is available.
+
+### 🧠 How It Works (Conceptually)
+- Users can chat with PlanPal in the app to receive:
+  - 🏖️ Mood-based event ideas (e.g., “Chill”, “Foodie”, “Adventurous”)  
+  - 📍 Smart location-based suggestions  
+  - 🗓️ Itinerary recommendations for group outings  
+- Responses are powered by **Google Gemini (Generative AI)** via the `google-generativeai` Python library.
+
+> _Note: The PlanPal AI feature has been built and tested locally using mock data. Live interaction can be enabled by setting a valid Google Gemini API key._
+
 
 
 ## 🧾 License
