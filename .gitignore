@@ -10,10 +10,15 @@ venv/
 env/
 ENV/
 
+# System files
+.DS_Store
+Thumbs.db
+
 # SQLite DBs and local data
 *.db
 backend.db
 users_data.json
+backend/backend.db
 
 # Archives & build outputs
 *.zip
@@ -29,3 +34,13 @@ users_data.json
 .streamlit/
 logs/
 .cache/
+config.toml
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# API keys or environment
+.env
+*.env

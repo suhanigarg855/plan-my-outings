@@ -1,0 +1,1253 @@
+Using key from environment (hidden).
+
+--- google.generativeai models ---
+1 Model(name='models/embedding-gecko-001',
+      base_model_id='',
+      version='001',
+      display_name='Embedding Gecko',
+      description='Obtain a distributed representation of a text.',
+      input_token_limit=1024,
+      output_token_limit=1,
+      supported_generation_methods=['embedText', '
+2 Model(name='models/gemini-2.5-pro-preview-03-25',
+      base_model_id='',
+      version='2.5-preview-03-25',
+      display_name='Gemini 2.5 Pro Preview 03-25',
+      description='Gemini 2.5 Pro Preview 03-25',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+      supported_generatio
+3 Model(name='models/gemini-2.5-flash-preview-05-20',
+      base_model_id='',
+      version='2.5-preview-05-20',
+      display_name='Gemini 2.5 Flash Preview 05-20',
+      description='Preview release (April 17th, 2025) of Gemini 2.5 Flash',
+      input_token_limit=1048576,
+      output_token_limit=65
+4 Model(name='models/gemini-2.5-flash',
+      base_model_id='',
+      version='001',
+      display_name='Gemini 2.5 Flash',
+      description=('Stable version of Gemini 2.5 Flash, our mid-size multimodal model that '
+                   'supports up to 1 million tokens, released in June of 2025.'),
+   
+5 Model(name='models/gemini-2.5-flash-lite-preview-06-17',
+      base_model_id='',
+      version='2.5-preview-06-17',
+      display_name='Gemini 2.5 Flash-Lite Preview 06-17',
+      description='Preview release (June 11th, 2025) of Gemini 2.5 Flash-Lite',
+      input_token_limit=1048576,
+      output_
+6 Model(name='models/gemini-2.5-pro-preview-05-06',
+      base_model_id='',
+      version='2.5-preview-05-06',
+      display_name='Gemini 2.5 Pro Preview 05-06',
+      description='Preview release (May 6th, 2025) of Gemini 2.5 Pro',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+    
+7 Model(name='models/gemini-2.5-pro-preview-06-05',
+      base_model_id='',
+      version='2.5-preview-06-05',
+      display_name='Gemini 2.5 Pro Preview',
+      description='Preview release (June 5th, 2025) of Gemini 2.5 Pro',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+      sup
+8 Model(name='models/gemini-2.5-pro',
+      base_model_id='',
+      version='2.5',
+      display_name='Gemini 2.5 Pro',
+      description='Stable release (June 17th, 2025) of Gemini 2.5 Pro',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+      supported_generation_methods=['generate
+9 Model(name='models/gemini-2.0-flash-exp',
+      base_model_id='',
+      version='2.0',
+      display_name='Gemini 2.0 Flash Experimental',
+      description='Gemini 2.0 Flash Experimental',
+      input_token_limit=1048576,
+      output_token_limit=8192,
+      supported_generation_methods=['generateC
+10 Model(name='models/gemini-2.0-flash',
+      base_model_id='',
+      version='2.0',
+      display_name='Gemini 2.0 Flash',
+      description='Gemini 2.0 Flash',
+      input_token_limit=1048576,
+      output_token_limit=8192,
+      supported_generation_methods=['generateContent',
+                     
+11 Model(name='models/gemini-2.0-flash-001',
+      base_model_id='',
+      version='2.0',
+      display_name='Gemini 2.0 Flash 001',
+      description=('Stable version of Gemini 2.0 Flash, our fast and versatile multimodal model '
+                   'for scaling across diverse tasks, released in Januar
+12 Model(name='models/gemini-2.0-flash-exp-image-generation',
+      base_model_id='',
+      version='2.0',
+      display_name='Gemini 2.0 Flash (Image Generation) Experimental',
+      description='Gemini 2.0 Flash (Image Generation) Experimental',
+      input_token_limit=1048576,
+      output_token_lim
+13 Model(name='models/gemini-2.0-flash-lite-001',
+      base_model_id='',
+      version='2.0',
+      display_name='Gemini 2.0 Flash-Lite 001',
+      description='Stable version of Gemini 2.0 Flash-Lite',
+      input_token_limit=1048576,
+      output_token_limit=8192,
+      supported_generation_methods=
+14 Model(name='models/gemini-2.0-flash-lite',
+      base_model_id='',
+      version='2.0',
+      display_name='Gemini 2.0 Flash-Lite',
+      description='Gemini 2.0 Flash-Lite',
+      input_token_limit=1048576,
+      output_token_limit=8192,
+      supported_generation_methods=['generateContent',
+      
+15 Model(name='models/gemini-2.0-flash-preview-image-generation',
+      base_model_id='',
+      version='2.0',
+      display_name='Gemini 2.0 Flash Preview Image Generation',
+      description='Gemini 2.0 Flash Preview Image Generation',
+      input_token_limit=32768,
+      output_token_limit=8192,
+   
+16 Model(name='models/gemini-2.0-flash-lite-preview-02-05',
+      base_model_id='',
+      version='preview-02-05',
+      display_name='Gemini 2.0 Flash-Lite Preview 02-05',
+      description='Preview release (February 5th, 2025) of Gemini 2.0 Flash-Lite',
+      input_token_limit=1048576,
+      output_t
+17 Model(name='models/gemini-2.0-flash-lite-preview',
+      base_model_id='',
+      version='preview-02-05',
+      display_name='Gemini 2.0 Flash-Lite Preview',
+      description='Preview release (February 5th, 2025) of Gemini 2.0 Flash-Lite',
+      input_token_limit=1048576,
+      output_token_limit=8
+18 Model(name='models/gemini-2.0-pro-exp',
+      base_model_id='',
+      version='2.5-exp-03-25',
+      display_name='Gemini 2.0 Pro Experimental',
+      description='Experimental release (March 25th, 2025) of Gemini 2.5 Pro',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+      suppo
+19 Model(name='models/gemini-2.0-pro-exp-02-05',
+      base_model_id='',
+      version='2.5-exp-03-25',
+      display_name='Gemini 2.0 Pro Experimental 02-05',
+      description='Experimental release (March 25th, 2025) of Gemini 2.5 Pro',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+20 Model(name='models/gemini-exp-1206',
+      base_model_id='',
+      version='2.5-exp-03-25',
+      display_name='Gemini Experimental 1206',
+      description='Experimental release (March 25th, 2025) of Gemini 2.5 Pro',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+      supported_g
+21 Model(name='models/gemini-2.0-flash-thinking-exp-01-21',
+      base_model_id='',
+      version='2.5-preview-05-20',
+      display_name='Gemini 2.5 Flash Preview 05-20',
+      description='Preview release (April 17th, 2025) of Gemini 2.5 Flash',
+      input_token_limit=1048576,
+      output_token_lim
+22 Model(name='models/gemini-2.0-flash-thinking-exp',
+      base_model_id='',
+      version='2.5-preview-05-20',
+      display_name='Gemini 2.5 Flash Preview 05-20',
+      description='Preview release (April 17th, 2025) of Gemini 2.5 Flash',
+      input_token_limit=1048576,
+      output_token_limit=655
+23 Model(name='models/gemini-2.0-flash-thinking-exp-1219',
+      base_model_id='',
+      version='2.5-preview-05-20',
+      display_name='Gemini 2.5 Flash Preview 05-20',
+      description='Preview release (April 17th, 2025) of Gemini 2.5 Flash',
+      input_token_limit=1048576,
+      output_token_limi
+24 Model(name='models/gemini-2.5-flash-preview-tts',
+      base_model_id='',
+      version='gemini-2.5-flash-exp-tts-2025-05-19',
+      display_name='Gemini 2.5 Flash Preview TTS',
+      description='Gemini 2.5 Flash Preview TTS',
+      input_token_limit=8192,
+      output_token_limit=16384,
+      supp
+25 Model(name='models/gemini-2.5-pro-preview-tts',
+      base_model_id='',
+      version='gemini-2.5-pro-preview-tts-2025-05-19',
+      display_name='Gemini 2.5 Pro Preview TTS',
+      description='Gemini 2.5 Pro Preview TTS',
+      input_token_limit=8192,
+      output_token_limit=16384,
+      supporte
+26 Model(name='models/learnlm-2.0-flash-experimental',
+      base_model_id='',
+      version='2.0',
+      display_name='LearnLM 2.0 Flash Experimental',
+      description='LearnLM 2.0 Flash Experimental',
+      input_token_limit=1048576,
+      output_token_limit=32768,
+      supported_generation_method
+27 Model(name='models/gemma-3-1b-it',
+      base_model_id='',
+      version='001',
+      display_name='Gemma 3 1B',
+      description='',
+      input_token_limit=32768,
+      output_token_limit=8192,
+      supported_generation_methods=['generateContent', 'countTokens'],
+      temperature=1.0,
+      max
+28 Model(name='models/gemma-3-4b-it',
+      base_model_id='',
+      version='001',
+      display_name='Gemma 3 4B',
+      description='',
+      input_token_limit=32768,
+      output_token_limit=8192,
+      supported_generation_methods=['generateContent', 'countTokens'],
+      temperature=1.0,
+      max
+29 Model(name='models/gemma-3-12b-it',
+      base_model_id='',
+      version='001',
+      display_name='Gemma 3 12B',
+      description='',
+      input_token_limit=32768,
+      output_token_limit=8192,
+      supported_generation_methods=['generateContent', 'countTokens'],
+      temperature=1.0,
+      m
+30 Model(name='models/gemma-3-27b-it',
+      base_model_id='',
+      version='001',
+      display_name='Gemma 3 27B',
+      description='',
+      input_token_limit=131072,
+      output_token_limit=8192,
+      supported_generation_methods=['generateContent', 'countTokens'],
+      temperature=1.0,
+      
+31 Model(name='models/gemma-3n-e4b-it',
+      base_model_id='',
+      version='001',
+      display_name='Gemma 3n E4B',
+      description='',
+      input_token_limit=8192,
+      output_token_limit=2048,
+      supported_generation_methods=['generateContent', 'countTokens'],
+      temperature=1.0,
+      
+32 Model(name='models/gemma-3n-e2b-it',
+      base_model_id='',
+      version='001',
+      display_name='Gemma 3n E2B',
+      description='',
+      input_token_limit=8192,
+      output_token_limit=2048,
+      supported_generation_methods=['generateContent', 'countTokens'],
+      temperature=1.0,
+      
+33 Model(name='models/gemini-flash-latest',
+      base_model_id='',
+      version='Gemini Flash Latest',
+      display_name='Gemini Flash Latest',
+      description='Latest release of Gemini Flash',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+      supported_generation_methods=['ge
+34 Model(name='models/gemini-flash-lite-latest',
+      base_model_id='',
+      version='Gemini Flash-Lite Latest',
+      display_name='Gemini Flash-Lite Latest',
+      description='Latest release of Gemini Flash-Lite',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+      supported_gen
+35 Model(name='models/gemini-pro-latest',
+      base_model_id='',
+      version='Gemini Pro Latest',
+      display_name='Gemini Pro Latest',
+      description='Latest release of Gemini Pro',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+      supported_generation_methods=['generateCo
+36 Model(name='models/gemini-2.5-flash-lite',
+      base_model_id='',
+      version='001',
+      display_name='Gemini 2.5 Flash-Lite',
+      description='Stable version of Gemini 2.5 Flash-Lite, released in July of 2025',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+      supported_
+37 Model(name='models/gemini-2.5-flash-image-preview',
+      base_model_id='',
+      version='2.0',
+      display_name='Nano Banana',
+      description='Gemini 2.5 Flash Preview Image',
+      input_token_limit=32768,
+      output_token_limit=8192,
+      supported_generation_methods=['generateContent', 
+38 Model(name='models/gemini-2.5-flash-image',
+      base_model_id='',
+      version='2.0',
+      display_name='Nano Banana',
+      description='Gemini 2.5 Flash Preview Image',
+      input_token_limit=32768,
+      output_token_limit=8192,
+      supported_generation_methods=['generateContent', 'countTo
+39 Model(name='models/gemini-2.5-flash-preview-09-2025',
+      base_model_id='',
+      version='Gemini 2.5 Flash Preview 09-2025',
+      display_name='Gemini 2.5 Flash Preview Sep 2025',
+      description='Gemini 2.5 Flash Preview Sep 2025',
+      input_token_limit=1048576,
+      output_token_limit=655
+40 Model(name='models/gemini-2.5-flash-lite-preview-09-2025',
+      base_model_id='',
+      version='2.5-preview-09-25',
+      display_name='Gemini 2.5 Flash-Lite Preview Sep 2025',
+      description='Preview release (Septempber 25th, 2025) of Gemini 2.5 Flash-Lite',
+      input_token_limit=1048576,
+  
+41 Model(name='models/gemini-robotics-er-1.5-preview',
+      base_model_id='',
+      version='1.5-preview',
+      display_name='Gemini Robotics-ER 1.5 Preview',
+      description='Gemini Robotics-ER 1.5 Preview',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+      supported_generatio
+42 Model(name='models/gemini-2.5-computer-use-preview-10-2025',
+      base_model_id='',
+      version='Gemini 2.5 Computer Use Preview 10-2025',
+      display_name='Gemini 2.5 Computer Use Preview 10-2025',
+      description='Gemini 2.5 Computer Use Preview 10-2025',
+      input_token_limit=131072,
+   
+43 Model(name='models/embedding-001',
+      base_model_id='',
+      version='001',
+      display_name='Embedding 001',
+      description='Obtain a distributed representation of a text.',
+      input_token_limit=2048,
+      output_token_limit=1,
+      supported_generation_methods=['embedContent'],
+     
+44 Model(name='models/text-embedding-004',
+      base_model_id='',
+      version='004',
+      display_name='Text Embedding 004',
+      description='Obtain a distributed representation of a text.',
+      input_token_limit=2048,
+      output_token_limit=1,
+      supported_generation_methods=['embedConten
+45 Model(name='models/gemini-embedding-exp-03-07',
+      base_model_id='',
+      version='exp-03-07',
+      display_name='Gemini Embedding Experimental 03-07',
+      description='Obtain a distributed representation of a text.',
+      input_token_limit=8192,
+      output_token_limit=1,
+      supported_g
+46 Model(name='models/gemini-embedding-exp',
+      base_model_id='',
+      version='exp-03-07',
+      display_name='Gemini Embedding Experimental',
+      description='Obtain a distributed representation of a text.',
+      input_token_limit=8192,
+      output_token_limit=1,
+      supported_generation_me
+47 Model(name='models/gemini-embedding-001',
+      base_model_id='',
+      version='001',
+      display_name='Gemini Embedding 001',
+      description='Obtain a distributed representation of a text.',
+      input_token_limit=2048,
+      output_token_limit=1,
+      supported_generation_methods=['embedCo
+48 Model(name='models/aqa',
+      base_model_id='',
+      version='001',
+      display_name='Model that performs Attributed Question Answering.',
+      description=('Model trained to return answers to questions that are grounded in provided '
+                   'sources, along with estimating answerabl
+49 Model(name='models/imagen-3.0-generate-002',
+      base_model_id='',
+      version='002',
+      display_name='Imagen 3.0',
+      description='Vertex served Imagen 3.0 002 model',
+      input_token_limit=480,
+      output_token_limit=8192,
+      supported_generation_methods=['predict'],
+      tempera
+50 Model(name='models/imagen-4.0-generate-preview-06-06',
+      base_model_id='',
+      version='01',
+      display_name='Imagen 4 (Preview)',
+      description='Vertex served Imagen 4.0 model',
+      input_token_limit=480,
+      output_token_limit=8192,
+      supported_generation_methods=['predict'],
+
+51 Model(name='models/imagen-4.0-ultra-generate-preview-06-06',
+      base_model_id='',
+      version='01',
+      display_name='Imagen 4 Ultra (Preview)',
+      description='Vertex served Imagen 4.0 ultra model',
+      input_token_limit=480,
+      output_token_limit=8192,
+      supported_generation_met
+52 Model(name='models/imagen-4.0-generate-001',
+      base_model_id='',
+      version='001',
+      display_name='Imagen 4',
+      description='Vertex served Imagen 4.0 model',
+      input_token_limit=480,
+      output_token_limit=8192,
+      supported_generation_methods=['predict'],
+      temperature=N
+53 Model(name='models/imagen-4.0-ultra-generate-001',
+      base_model_id='',
+      version='001',
+      display_name='Imagen 4 Ultra',
+      description='Vertex served Imagen 4.0 ultra model',
+      input_token_limit=480,
+      output_token_limit=8192,
+      supported_generation_methods=['predict'],
+ 
+54 Model(name='models/imagen-4.0-fast-generate-001',
+      base_model_id='',
+      version='001',
+      display_name='Imagen 4 Fast',
+      description='Vertex served Imagen 4.0 Fast model',
+      input_token_limit=480,
+      output_token_limit=8192,
+      supported_generation_methods=['predict'],
+    
+55 Model(name='models/veo-2.0-generate-001',
+      base_model_id='',
+      version='2.0',
+      display_name='Veo 2',
+      description=('Vertex served Veo 2 model. Access to this model requires billing to be '
+                   'enabled on the associated Google Cloud Platform account. Please visit '
+
+56 Model(name='models/veo-3.0-generate-preview',
+      base_model_id='',
+      version='3.0',
+      display_name='Veo 3',
+      description='Veo 3 preview.',
+      input_token_limit=480,
+      output_token_limit=8192,
+      supported_generation_methods=['predictLongRunning'],
+      temperature=None,
+  
+57 Model(name='models/veo-3.0-fast-generate-preview',
+      base_model_id='',
+      version='3.0',
+      display_name='Veo 3 fast',
+      description='Veo 3 fast preview.',
+      input_token_limit=480,
+      output_token_limit=8192,
+      supported_generation_methods=['predictLongRunning'],
+      tempe
+58 Model(name='models/veo-3.0-generate-001',
+      base_model_id='',
+      version='3.0',
+      display_name='Veo 3',
+      description='Veo 3',
+      input_token_limit=480,
+      output_token_limit=8192,
+      supported_generation_methods=['predictLongRunning'],
+      temperature=None,
+      max_tempe
+59 Model(name='models/veo-3.0-fast-generate-001',
+      base_model_id='',
+      version='3.0',
+      display_name='Veo 3 fast',
+      description='Veo 3 fast',
+      input_token_limit=480,
+      output_token_limit=8192,
+      supported_generation_methods=['predictLongRunning'],
+      temperature=None,
+
+60 Model(name='models/veo-3.1-generate-preview',
+      base_model_id='',
+      version='3.1',
+      display_name='Veo 3.1',
+      description='Veo 3.1',
+      input_token_limit=480,
+      output_token_limit=8192,
+      supported_generation_methods=['predictLongRunning'],
+      temperature=None,
+      m
+61 Model(name='models/veo-3.1-fast-generate-preview',
+      base_model_id='',
+      version='3.1',
+      display_name='Veo 3.1 fast',
+      description='Veo 3.1 fast',
+      input_token_limit=480,
+      output_token_limit=8192,
+      supported_generation_methods=['predictLongRunning'],
+      temperatur
+62 Model(name='models/gemini-2.0-flash-live-001',
+      base_model_id='',
+      version='001',
+      display_name='Gemini 2.0 Flash 001',
+      description='Gemini 2.0 Flash 001',
+      input_token_limit=131072,
+      output_token_limit=8192,
+      supported_generation_methods=['bidiGenerateContent', '
+63 Model(name='models/gemini-live-2.5-flash-preview',
+      base_model_id='',
+      version='001',
+      display_name='Gemini Live 2.5 Flash Preview',
+      description='Gemini Live 2.5 Flash Preview',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+      supported_generation_methods=[
+64 Model(name='models/gemini-2.5-flash-live-preview',
+      base_model_id='',
+      version='001',
+      display_name='Gemini 2.5 Flash Live Preview',
+      description='Gemini 2.5 Flash Live Preview',
+      input_token_limit=1048576,
+      output_token_limit=65536,
+      supported_generation_methods=[
+65 Model(name='models/gemini-2.5-flash-native-audio-latest',
+      base_model_id='',
+      version='Gemini 2.5 Flash Native Audio Latest',
+      display_name='Gemini 2.5 Flash Native Audio Latest',
+      description='Latest release of Gemini 2.5 Flash Native Audio',
+      input_token_limit=131072,
+    
+66 Model(name='models/gemini-2.5-flash-native-audio-preview-09-2025',
+      base_model_id='',
+      version='gemini-2.5-flash-preview-native-audio-dialog-2025-05-19',
+      display_name='Gemini 2.5 Flash Native Audio Preview 09-2025',
+      description='Gemini 2.5 Flash Native Audio Preview 09-2025',
+ 
+
+--- google.genai.models ---
+genai.models.list() failed: AttributeError("module 'google.genai.models' has no attribute 'list'")
+
+client.models.list() items (sample):
+1 Model(
+  description='Obtain a distributed representation of a text.',
+  display_name='Embedding Gecko',
+  input_token_limit=1024,
+  name='models/embedding-gecko-001',
+  output_token_limit=1,
+  supported_actions=[
+    'embedText',
+    'countTextTokens',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  ve
+2 Model(
+  description='Gemini 2.5 Pro Preview 03-25',
+  display_name='Gemini 2.5 Pro Preview 03-25',
+  input_token_limit=1048576,
+  name='models/gemini-2.5-pro-preview-03-25',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createCachedContent',
+    'b
+3 Model(
+  description='Preview release (April 17th, 2025) of Gemini 2.5 Flash',
+  display_name='Gemini 2.5 Flash Preview 05-20',
+  input_token_limit=1048576,
+  name='models/gemini-2.5-flash-preview-05-20',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+   
+4 Model(
+  description='Stable version of Gemini 2.5 Flash, our mid-size multimodal model that supports up to 1 million tokens, released in June of 2025.',
+  display_name='Gemini 2.5 Flash',
+  input_token_limit=1048576,
+  name='models/gemini-2.5-flash',
+  output_token_limit=65536,
+  supported_actions=
+5 Model(
+  description='Preview release (June 11th, 2025) of Gemini 2.5 Flash-Lite',
+  display_name='Gemini 2.5 Flash-Lite Preview 06-17',
+  input_token_limit=1048576,
+  name='models/gemini-2.5-flash-lite-preview-06-17',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'cou
+6 Model(
+  description='Preview release (May 6th, 2025) of Gemini 2.5 Pro',
+  display_name='Gemini 2.5 Pro Preview 05-06',
+  input_token_limit=1048576,
+  name='models/gemini-2.5-pro-preview-05-06',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createC
+7 Model(
+  description='Preview release (June 5th, 2025) of Gemini 2.5 Pro',
+  display_name='Gemini 2.5 Pro Preview',
+  input_token_limit=1048576,
+  name='models/gemini-2.5-pro-preview-06-05',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createCached
+8 Model(
+  description='Stable release (June 17th, 2025) of Gemini 2.5 Pro',
+  display_name='Gemini 2.5 Pro',
+  input_token_limit=1048576,
+  name='models/gemini-2.5-pro',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createCachedContent',
+    'batchGe
+9 Model(
+  description='Gemini 2.0 Flash Experimental',
+  display_name='Gemini 2.0 Flash Experimental',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-flash-exp',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'bidiGenerateContent',
+  ],
+  tuned_
+10 Model(
+  description='Gemini 2.0 Flash',
+  display_name='Gemini 2.0 Flash',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-flash',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createCachedContent',
+    'batchGenerateContent',
+  ],
+  tuned_mo
+11 Model(
+  description='Stable version of Gemini 2.0 Flash, our fast and versatile multimodal model for scaling across diverse tasks, released in January of 2025.',
+  display_name='Gemini 2.0 Flash 001',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-flash-001',
+  output_token_limit=8192,
+  su
+12 Model(
+  description='Gemini 2.0 Flash (Image Generation) Experimental',
+  display_name='Gemini 2.0 Flash (Image Generation) Experimental',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-flash-exp-image-generation',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    
+13 Model(
+  description='Stable version of Gemini 2.0 Flash-Lite',
+  display_name='Gemini 2.0 Flash-Lite 001',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-flash-lite-001',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createCachedContent',
+  
+14 Model(
+  description='Gemini 2.0 Flash-Lite',
+  display_name='Gemini 2.0 Flash-Lite',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-flash-lite',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createCachedContent',
+    'batchGenerateContent',
+
+15 Model(
+  description='Gemini 2.0 Flash Preview Image Generation',
+  display_name='Gemini 2.0 Flash Preview Image Generation',
+  input_token_limit=32768,
+  name='models/gemini-2.0-flash-preview-image-generation',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'countTokens
+16 Model(
+  description='Preview release (February 5th, 2025) of Gemini 2.0 Flash-Lite',
+  display_name='Gemini 2.0 Flash-Lite Preview 02-05',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-flash-lite-preview-02-05',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'c
+17 Model(
+  description='Preview release (February 5th, 2025) of Gemini 2.0 Flash-Lite',
+  display_name='Gemini 2.0 Flash-Lite Preview',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-flash-lite-preview',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+18 Model(
+  description='Experimental release (March 25th, 2025) of Gemini 2.5 Pro',
+  display_name='Gemini 2.0 Pro Experimental',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-pro-exp',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createCach
+19 Model(
+  description='Experimental release (March 25th, 2025) of Gemini 2.5 Pro',
+  display_name='Gemini 2.0 Pro Experimental 02-05',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-pro-exp-02-05',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+   
+20 Model(
+  description='Experimental release (March 25th, 2025) of Gemini 2.5 Pro',
+  display_name='Gemini Experimental 1206',
+  input_token_limit=1048576,
+  name='models/gemini-exp-1206',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createCachedCont
+21 Model(
+  description='Preview release (April 17th, 2025) of Gemini 2.5 Flash',
+  display_name='Gemini 2.5 Flash Preview 05-20',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-flash-thinking-exp-01-21',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens'
+22 Model(
+  description='Preview release (April 17th, 2025) of Gemini 2.5 Flash',
+  display_name='Gemini 2.5 Flash Preview 05-20',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-flash-thinking-exp',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    
+23 Model(
+  description='Preview release (April 17th, 2025) of Gemini 2.5 Flash',
+  display_name='Gemini 2.5 Flash Preview 05-20',
+  input_token_limit=1048576,
+  name='models/gemini-2.0-flash-thinking-exp-1219',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+24 Model(
+  description='Gemini 2.5 Flash Preview TTS',
+  display_name='Gemini 2.5 Flash Preview TTS',
+  input_token_limit=8192,
+  name='models/gemini-2.5-flash-preview-tts',
+  output_token_limit=16384,
+  supported_actions=[
+    'countTokens',
+    'generateContent',
+  ],
+  tuned_model_info=TunedModelIn
+25 Model(
+  description='Gemini 2.5 Pro Preview TTS',
+  display_name='Gemini 2.5 Pro Preview TTS',
+  input_token_limit=8192,
+  name='models/gemini-2.5-pro-preview-tts',
+  output_token_limit=16384,
+  supported_actions=[
+    'countTokens',
+    'generateContent',
+  ],
+  tuned_model_info=TunedModelInfo(),
+
+26 Model(
+  description='LearnLM 2.0 Flash Experimental',
+  display_name='LearnLM 2.0 Flash Experimental',
+  input_token_limit=1048576,
+  name='models/learnlm-2.0-flash-experimental',
+  output_token_limit=32768,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+  ],
+  tuned_model_info=Tun
+27 Model(
+  display_name='Gemma 3 1B',
+  input_token_limit=32768,
+  name='models/gemma-3-1b-it',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='001'
+)
+28 Model(
+  display_name='Gemma 3 4B',
+  input_token_limit=32768,
+  name='models/gemma-3-4b-it',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='001'
+)
+29 Model(
+  display_name='Gemma 3 12B',
+  input_token_limit=32768,
+  name='models/gemma-3-12b-it',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='001'
+)
+30 Model(
+  display_name='Gemma 3 27B',
+  input_token_limit=131072,
+  name='models/gemma-3-27b-it',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='001'
+)
+31 Model(
+  display_name='Gemma 3n E4B',
+  input_token_limit=8192,
+  name='models/gemma-3n-e4b-it',
+  output_token_limit=2048,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='001'
+)
+32 Model(
+  display_name='Gemma 3n E2B',
+  input_token_limit=8192,
+  name='models/gemma-3n-e2b-it',
+  output_token_limit=2048,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='001'
+)
+33 Model(
+  description='Latest release of Gemini Flash',
+  display_name='Gemini Flash Latest',
+  input_token_limit=1048576,
+  name='models/gemini-flash-latest',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createCachedContent',
+    'batchGenerateCont
+34 Model(
+  description='Latest release of Gemini Flash-Lite',
+  display_name='Gemini Flash-Lite Latest',
+  input_token_limit=1048576,
+  name='models/gemini-flash-lite-latest',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createCachedContent',
+    'ba
+35 Model(
+  description='Latest release of Gemini Pro',
+  display_name='Gemini Pro Latest',
+  input_token_limit=1048576,
+  name='models/gemini-pro-latest',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createCachedContent',
+    'batchGenerateContent',
+
+36 Model(
+  description='Stable version of Gemini 2.5 Flash-Lite, released in July of 2025',
+  display_name='Gemini 2.5 Flash-Lite',
+  input_token_limit=1048576,
+  name='models/gemini-2.5-flash-lite',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'creat
+37 Model(
+  description='Gemini 2.5 Flash Preview Image',
+  display_name='Nano Banana',
+  input_token_limit=32768,
+  name='models/gemini-2.5-flash-image-preview',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'batchGenerateContent',
+  ],
+  tuned_model_in
+38 Model(
+  description='Gemini 2.5 Flash Preview Image',
+  display_name='Nano Banana',
+  input_token_limit=32768,
+  name='models/gemini-2.5-flash-image',
+  output_token_limit=8192,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'batchGenerateContent',
+  ],
+  tuned_model_info=Tuned
+39 Model(
+  description='Gemini 2.5 Flash Preview Sep 2025',
+  display_name='Gemini 2.5 Flash Preview Sep 2025',
+  input_token_limit=1048576,
+  name='models/gemini-2.5-flash-preview-09-2025',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+    'createCachedCo
+40 Model(
+  description='Preview release (Septempber 25th, 2025) of Gemini 2.5 Flash-Lite',
+  display_name='Gemini 2.5 Flash-Lite Preview Sep 2025',
+  input_token_limit=1048576,
+  name='models/gemini-2.5-flash-lite-preview-09-2025',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent
+41 Model(
+  description='Gemini Robotics-ER 1.5 Preview',
+  display_name='Gemini Robotics-ER 1.5 Preview',
+  input_token_limit=1048576,
+  name='models/gemini-robotics-er-1.5-preview',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+  ],
+  tuned_model_info=Tun
+42 Model(
+  description='Gemini 2.5 Computer Use Preview 10-2025',
+  display_name='Gemini 2.5 Computer Use Preview 10-2025',
+  input_token_limit=131072,
+  name='models/gemini-2.5-computer-use-preview-10-2025',
+  output_token_limit=65536,
+  supported_actions=[
+    'generateContent',
+    'countTokens',
+ 
+43 Model(
+  description='Obtain a distributed representation of a text.',
+  display_name='Embedding 001',
+  input_token_limit=2048,
+  name='models/embedding-001',
+  output_token_limit=1,
+  supported_actions=[
+    'embedContent',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='001'
+)
+44 Model(
+  description='Obtain a distributed representation of a text.',
+  display_name='Text Embedding 004',
+  input_token_limit=2048,
+  name='models/text-embedding-004',
+  output_token_limit=1,
+  supported_actions=[
+    'embedContent',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='004'
+)
+45 Model(
+  description='Obtain a distributed representation of a text.',
+  display_name='Gemini Embedding Experimental 03-07',
+  input_token_limit=8192,
+  name='models/gemini-embedding-exp-03-07',
+  output_token_limit=1,
+  supported_actions=[
+    'embedContent',
+    'countTextTokens',
+    'countTokens
+46 Model(
+  description='Obtain a distributed representation of a text.',
+  display_name='Gemini Embedding Experimental',
+  input_token_limit=8192,
+  name='models/gemini-embedding-exp',
+  output_token_limit=1,
+  supported_actions=[
+    'embedContent',
+    'countTextTokens',
+    'countTokens',
+  ],
+  tu
+47 Model(
+  description='Obtain a distributed representation of a text.',
+  display_name='Gemini Embedding 001',
+  input_token_limit=2048,
+  name='models/gemini-embedding-001',
+  output_token_limit=1,
+  supported_actions=[
+    'embedContent',
+    'countTextTokens',
+    'countTokens',
+    'asyncBatchEmb
+48 Model(
+  description='Model trained to return answers to questions that are grounded in provided sources, along with estimating answerable probability.',
+  display_name='Model that performs Attributed Question Answering.',
+  input_token_limit=7168,
+  name='models/aqa',
+  output_token_limit=1024,
+  s
+49 Model(
+  description='Vertex served Imagen 3.0 002 model',
+  display_name='Imagen 3.0',
+  input_token_limit=480,
+  name='models/imagen-3.0-generate-002',
+  output_token_limit=8192,
+  supported_actions=[
+    'predict',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='002'
+)
+50 Model(
+  description='Vertex served Imagen 4.0 model',
+  display_name='Imagen 4 (Preview)',
+  input_token_limit=480,
+  name='models/imagen-4.0-generate-preview-06-06',
+  output_token_limit=8192,
+  supported_actions=[
+    'predict',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='01'
+)
+51 Model(
+  description='Vertex served Imagen 4.0 ultra model',
+  display_name='Imagen 4 Ultra (Preview)',
+  input_token_limit=480,
+  name='models/imagen-4.0-ultra-generate-preview-06-06',
+  output_token_limit=8192,
+  supported_actions=[
+    'predict',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  versio
+52 Model(
+  description='Vertex served Imagen 4.0 model',
+  display_name='Imagen 4',
+  input_token_limit=480,
+  name='models/imagen-4.0-generate-001',
+  output_token_limit=8192,
+  supported_actions=[
+    'predict',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='001'
+)
+53 Model(
+  description='Vertex served Imagen 4.0 ultra model',
+  display_name='Imagen 4 Ultra',
+  input_token_limit=480,
+  name='models/imagen-4.0-ultra-generate-001',
+  output_token_limit=8192,
+  supported_actions=[
+    'predict',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='001'
+)
+54 Model(
+  description='Vertex served Imagen 4.0 Fast model',
+  display_name='Imagen 4 Fast',
+  input_token_limit=480,
+  name='models/imagen-4.0-fast-generate-001',
+  output_token_limit=8192,
+  supported_actions=[
+    'predict',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='001'
+)
+55 Model(
+  description='Vertex served Veo 2 model. Access to this model requires billing to be enabled on the associated Google Cloud Platform account. Please visit https://console.cloud.google.com/billing to enable it.',
+  display_name='Veo 2',
+  input_token_limit=480,
+  name='models/veo-2.0-generate
+56 Model(
+  description='Veo 3 preview.',
+  display_name='Veo 3',
+  input_token_limit=480,
+  name='models/veo-3.0-generate-preview',
+  output_token_limit=8192,
+  supported_actions=[
+    'predictLongRunning',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='3.0'
+)
+57 Model(
+  description='Veo 3 fast preview.',
+  display_name='Veo 3 fast',
+  input_token_limit=480,
+  name='models/veo-3.0-fast-generate-preview',
+  output_token_limit=8192,
+  supported_actions=[
+    'predictLongRunning',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='3.0'
+)
+58 Model(
+  description='Veo 3',
+  display_name='Veo 3',
+  input_token_limit=480,
+  name='models/veo-3.0-generate-001',
+  output_token_limit=8192,
+  supported_actions=[
+    'predictLongRunning',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='3.0'
+)
+59 Model(
+  description='Veo 3 fast',
+  display_name='Veo 3 fast',
+  input_token_limit=480,
+  name='models/veo-3.0-fast-generate-001',
+  output_token_limit=8192,
+  supported_actions=[
+    'predictLongRunning',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='3.0'
+)
+60 Model(
+  description='Veo 3.1',
+  display_name='Veo 3.1',
+  input_token_limit=480,
+  name='models/veo-3.1-generate-preview',
+  output_token_limit=8192,
+  supported_actions=[
+    'predictLongRunning',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='3.1'
+)
+61 Model(
+  description='Veo 3.1 fast',
+  display_name='Veo 3.1 fast',
+  input_token_limit=480,
+  name='models/veo-3.1-fast-generate-preview',
+  output_token_limit=8192,
+  supported_actions=[
+    'predictLongRunning',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  version='3.1'
+)
+62 Model(
+  description='Gemini 2.0 Flash 001',
+  display_name='Gemini 2.0 Flash 001',
+  input_token_limit=131072,
+  name='models/gemini-2.0-flash-live-001',
+  output_token_limit=8192,
+  supported_actions=[
+    'bidiGenerateContent',
+    'countTokens',
+  ],
+  tuned_model_info=TunedModelInfo(),
+  versio
+63 Model(
+  description='Gemini Live 2.5 Flash Preview',
+  display_name='Gemini Live 2.5 Flash Preview',
+  input_token_limit=1048576,
+  name='models/gemini-live-2.5-flash-preview',
+  output_token_limit=65536,
+  supported_actions=[
+    'bidiGenerateContent',
+    'countTokens',
+  ],
+  tuned_model_info=Tu
+64 Model(
+  description='Gemini 2.5 Flash Live Preview',
+  display_name='Gemini 2.5 Flash Live Preview',
+  input_token_limit=1048576,
+  name='models/gemini-2.5-flash-live-preview',
+  output_token_limit=65536,
+  supported_actions=[
+    'bidiGenerateContent',
+    'countTokens',
+  ],
+  tuned_model_info=Tu
+65 Model(
+  description='Latest release of Gemini 2.5 Flash Native Audio',
+  display_name='Gemini 2.5 Flash Native Audio Latest',
+  input_token_limit=131072,
+  name='models/gemini-2.5-flash-native-audio-latest',
+  output_token_limit=8192,
+  supported_actions=[
+    'countTokens',
+    'bidiGenerateConten
+66 Model(
+  description='Gemini 2.5 Flash Native Audio Preview 09-2025',
+  display_name='Gemini 2.5 Flash Native Audio Preview 09-2025',
+  input_token_limit=131072,
+  name='models/gemini-2.5-flash-native-audio-preview-09-2025',
+  output_token_limit=8192,
+  supported_actions=[
+    'countTokens',
+    'bi
+
+Done.

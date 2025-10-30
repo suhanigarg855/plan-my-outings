@@ -286,53 +286,75 @@ def get_user_events(user_id, event_type='all'):
 
 # ---------- DISPLAY EVENT CARD ----------
 def display_event(event):
-    """Render an event card with RSVP buttons."""
-    with st.container():
-        st.subheader(event["title"])
-        event_datetime = datetime.fromisoformat(event["event_datetime"])
+    """Display an event card (safe, uses local helper get_event_participants)."""
+    import streamlit as st
+    from datetime import datetime
 
+    with st.container():
+        # Title
+        st.subheader(event.get("title", "Untitled Event"))
+
+        # Event datetime and location
         col1, col2 = st.columns(2)
         with col1:
-            st.write(f"📅 {event_datetime.strftime('%B %d, %Y')}")
-            st.write(f"🕒 {event_datetime.strftime('%I:%M %p')}")
-        with col2:
-            st.write(f"📍 {event['location']}")
-            st.write(f"⏱️ Duration: {event['duration']} hrs")
+            # event_datetime might be stored as ISO string or as a datetime object
+            ev_dt = event.get("event_datetime")
+            if isinstance(ev_dt, str):
+                try:
+                    event_datetime = datetime.fromisoformat(ev_dt)
+                except Exception:
+                    # fallback: try parsing as numeric timestamp
+                    try:
+                        event_datetime = datetime.fromtimestamp(float(ev_dt))
+                    except Exception:
+                        event_datetime = None
+            else:
+                event_datetime = ev_dt
 
+            if event_datetime:
+                st.write(f"📅 {event_datetime.strftime('%B %d, %Y')}")
+                st.write(f"🕒 {event_datetime.strftime('%I:%M %p')}")
+            else:
+                st.write("📅 Date/time: Not available")
+
+        with col2:
+            st.write(f"📍 {event.get('location', 'Location not specified')}")
+            st.write(f"⏱️ Duration: {event.get('duration', 'N/A')} hours")
+
+        # Event details
         if event.get("description"):
             st.write("📝 **Details:**")
             st.write(event["description"])
 
-        if event.get("cost_estimate", 0) > 0:
-            st.write(f"💰 Estimated Cost: ₹{event['cost_estimate']}")
+        # Cost and participants
+        cost = event.get("cost_estimate") or 0
+        try:
+            cost_val = float(cost)
+        except Exception:
+            cost_val = 0.0
+        if cost_val > 0:
+            st.write(f"💰 Estimated Cost: ₹{cost_val} per person")
+        st.write(f"👥 Maximum Participants: {event.get('max_participants', 'N/A')}")
 
-        if event.get("group_id"):
-            st.caption(f"👥 Group ID: {event['group_id']}")
+        # RSVPs: call local helper get_event_participants(event_id)
+        # IMPORTANT: don't import the same module here — call function directly
+        try:
+            participants = get_event_participants(event.get("id"))
+        except NameError:
+            participants = None
+        except Exception as e:
+            participants = None
+            # optional: print or log the error for debugging
+            # print("Error fetching participants:", e)
 
-        col3, col4, col5 = st.columns(3)
-        user_id = st.session_state.get("user_id")
-
-        with col3:
-            if st.button("✅ Attending", key=f"att_{event['id']}"):
-                update_participation_status(event["id"], user_id, "attending")
-                st.success("Marked as attending")
-        with col4:
-            if st.button("❓ Maybe", key=f"maybe_{event['id']}"):
-                update_participation_status(event["id"], user_id, "maybe")
-                st.info("Marked as maybe")
-        with col5:
-            if st.button("❌ Can't Go", key=f"cant_{event['id']}"):
-                update_participation_status(event["id"], user_id, "not_attending")
-                st.warning("Marked as not attending")
-        
-                # --- Show current RSVPs ---
-        from event_management import get_event_participants
-        participants = get_event_participants(event["id"])
         if participants:
             st.write("👥 **RSVPs:**")
             for p in participants:
-                emoji = "✅" if p["status"] == "attending" else "❓" if p["status"] == "maybe" else "❌"
-                st.write(f"{emoji} {p['name']} ({p['status']})")
+                emoji = "✅" if p.get("status") == "attending" else "❓" if p.get("status") == "maybe" else "❌"
+                # show name if available, else user_id
+                name = p.get("name") or p.get("username") or f"User {p.get('user_id')}"
+                st.write(f"{emoji} {name} — {p.get('status')}")
+
 
 
 # ---------- UPDATE PARTICIPATION ----------

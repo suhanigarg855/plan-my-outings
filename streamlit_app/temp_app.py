@@ -1,16 +1,40 @@
-import streamlit as st
-import sys
+# temp_app.py (complete — replace your existing file with this)
 import os
+import sys
+
+# Path to this file's directory
+THIS_DIR = os.path.dirname(__file__)
+
+# Project root (one level up from this file)
+PROJECT_ROOT = os.path.abspath(os.path.join(THIS_DIR, ".."))
+
+# Backend directory (for diagnostics)
+BACKEND_PATH = os.path.join(PROJECT_ROOT, "backend")
+
+# Debug prints (visible in terminal running Streamlit)
+print("TEMP_APP STARTING: __file__ =", __file__)
+print("Computed PROJECT_ROOT =", PROJECT_ROOT)
+print("Computed BACKEND_PATH =", BACKEND_PATH)
+print("PROJECT_ROOT exists? ->", os.path.exists(PROJECT_ROOT))
+print("BACKEND_PATH exists? ->", os.path.exists(BACKEND_PATH))
+if os.path.exists(BACKEND_PATH):
+    print("Listing BACKEND_PATH files:", os.listdir(BACKEND_PATH))
+else:
+    print("BACKEND_PATH missing!")
+
+# Ensure project root is in sys.path so Python can import 'backend' package
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
+# ---------- Now normal imports ----------
+import streamlit as st
 from datetime import datetime
 from geopy.geocoders import Nominatim
 
-# ---------- PATH SETUP ----------
-backend_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'backend'))
-sys.path.append(backend_path)
-
-# ---------- IMPORT BACKEND MODULES ----------
-from authentication_new import init_user_db, login_page, register_page, verify_user
-from event_management import (
+# Import backend modules using package-qualified imports
+from backend.planpal_bot import show_planpal_chat_ui, show_event_planner_ui
+from backend.authentication_new import init_user_db, login_page, register_page, verify_user
+from backend.event_management import (
     init_events_db,
     create_event_form,
     save_event,
@@ -18,7 +42,6 @@ from event_management import (
     display_event,
     update_participation_status
 )
-from planpal_bot import init_planpal, show_planpal_chat
 
 # ---------- STREAMLIT CONFIG ----------
 st.set_page_config(page_title="Plan My Outings", page_icon="🗺️", layout="wide")
@@ -112,7 +135,7 @@ def show_groups():
         group_name = st.text_input("Group Name", key="create_group_name")
         if st.button("Create Group", use_container_width=True, key="btn_create_group"):
             if group_name.strip():
-                from event_management import create_group
+                from backend.event_management import create_group
                 success, msg = create_group(group_name.strip(), st.session_state.user_id)
                 if success:
                     st.success(msg)
@@ -126,7 +149,7 @@ def show_groups():
         token = st.text_input("Enter Group Token", key="join_group_token")
         if st.button("Join Group", use_container_width=True, key="btn_join_group"):
             if token.strip():
-                from event_management import join_group
+                from backend.event_management import join_group
                 success, msg = join_group(token.strip().upper(), st.session_state.user_id)
                 if success:
                     st.success(msg)
@@ -134,11 +157,6 @@ def show_groups():
                     st.error(msg)
             else:
                 st.error("Please enter a valid token")
-
-def show_planpal():
-    st.header("🤖 PlanPal Assistant")
-    st.caption("Chat with your smart outing assistant!")
-    show_planpal_chat()
 
 def show_smart_suggestions():
     st.header("🧠 Mood-Based Smart Suggestions")
@@ -150,7 +168,7 @@ def show_smart_suggestions():
     mood = st.selectbox("Choose a mood", ["Chill", "Foodie", "Adventurous"])
 
     if st.button("✨ Suggest Places"):
-        from event_management import compute_centroid, get_places_nearby
+        from backend.event_management import compute_centroid, get_places_nearby
 
         cities = [c.strip() for c in group_cities.split(",") if c.strip()]
         lat, lon = compute_centroid(cities)
@@ -165,7 +183,6 @@ def show_smart_suggestions():
             st.success(f"Top suggestions for '{mood}' mood:")
             for i, p in enumerate(places, 1):
                 st.write(f"{i}. 📍 {p['name']}")
-
 
 # ---------- MAIN APP ----------
 def main():
@@ -184,7 +201,6 @@ def main():
             show_dashboard()
         elif nav == "Groups":
             show_groups()
-    
         elif nav == "Create Event":
             show_create_event()
         elif nav == "Join Events":
@@ -192,10 +208,14 @@ def main():
         elif nav == "My Events":
             show_my_events()
         elif nav == "PlanPal Assistant":
-            show_planpal()
+            # ✅ Show both chat & planner tabs
+            tab1, tab2 = st.tabs(["Chat", "Planner"])
+            with tab1:
+                show_planpal_chat_ui()
+            with tab2:
+                show_event_planner_ui()
         elif nav == "Smart Suggestions":
             show_smart_suggestions()
-    
 
         # Logout
         st.sidebar.write("---")
